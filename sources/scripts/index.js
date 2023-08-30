@@ -154,7 +154,7 @@ function deleteTask(index) {
     const childrenForDelete = divTasks.querySelectorAll('.task__item');
     divTasks.removeChild(childrenForDelete[index]);
 
-    //Subtratir todos os index
+    //Subtrair todos os index
     for (let c = index; c < divTasks.children.length; c++) {
         const child = divTasks.children[c];
         child.id = (Number(child.id) - 1).toString();
@@ -200,7 +200,6 @@ document.addEventListener('keydown', function(event) {
         divTasks.lastChild.scrollIntoView({behavior: 'smooth', block: 'center'});
         divTasks.lastChild.addEventListener('animationstart', () => {divTasks.lastChild.children[2].value = '';});
     }
-    
 }); //Add Task
 document.addEventListener('keydown', function(event) {
     if (event.key === '-') {
