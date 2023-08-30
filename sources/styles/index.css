@@ -1,0 +1,14 @@
+/* Reset */
+@import url("reset.css");
+
+/* Cores */
+@import url("colors.css");
+
+/* Header */
+@import url("header.css");
+
+/* Main */
+@import url("main.css");
+
+/* Footer */
+@import url("footer.css");

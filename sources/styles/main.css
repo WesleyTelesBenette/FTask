@@ -1,0 +1,172 @@
+/* Main */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main__title {
+    font-size: 2em;
+    margin-left: 3em;
+    align-self: flex-start;
+}
+.hr {
+    width: 90%;
+    background-color: var(--text-dark);
+    margin: 1em;
+}
+#main__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 2em;
+    transform-origin: center;
+    transition: all 100ms ease-in-out;
+    margin-top: 0.3em;
+}
+/* Tasks */
+@keyframes taskInit {
+    from {
+        opacity: 0%;
+        width: 0%;
+        height: 0em;
+    }
+    80% {
+        opacity: 80%;
+        width: 102%;
+        height: 4.2em;
+    }
+    to {
+        opacity: 100%;
+        width: 100%;
+        height: 4em;
+    }
+}
+.taskInit {
+    animation: taskInit 300ms ease-in-out 0s 1 normal;
+}
+@keyframes taskEnd {
+    from {
+        width: 100%;
+        height: 4em;
+        margin: 0.4em;
+    }
+    20% {
+        width: 110%;
+        height: 5em;
+        opacity: 80%;
+        margin: 0.32em;
+    }
+    90% {
+        position:relative ;
+        width: 0%;
+        height: 0em;
+        opacity: 0%;
+        margin: 0em;
+    }
+    to {
+        width: 0%;
+        height: 0em;
+        opacity: 0%;
+        margin: 0em;
+    }
+}
+.taskEnd {
+    animation: taskEnd 300ms ease-in-out 0s 1 normal;
+}
+#tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70vw;
+}
+.task__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    background-color: var(--back-dark);
+    border-width: 0.15em;
+    border-color: var(--back-default);
+    border-style:solid;
+    width: 100%;
+    height: 4em;
+    margin: 0.4em;
+}
+.task__style {
+    background-color: var(--back-dark);
+    border-color: var(--back-default);
+    border-style: solid;
+    border-width: 0.15em;
+    border-radius: 0px;
+}
+.task__style__desatived {
+    background-color: var(--back-dark);
+    border-color: var(--back-dark);
+    border-style: solid;
+    border-width: 0.15em;
+    border-radius: 0px;
+    visibility: hidden;
+}
+.item__check {
+    animation: memberTaskInit 300ms ease-in-out 0s 1 normal;
+    width: 2em;
+    height: 2em;
+}
+.item__div {
+    animation: memberTaskInit 300ms ease-in-out 0s 1 normal;
+    width: 0.2em;
+    height: 2em;
+    background-color: var(--back-default);
+}
+.item__input {
+    animation: memberTaskInit 300ms ease-in-out 0s 1 normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-default);
+    width: 70%;
+    height: 1.3em;
+    padding: 0.5em;
+}
+.item__add {
+    animation: memberTaskInit 300ms ease-in-out 0s 1 normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+}
+.item__delete {
+    animation: memberTaskInit 300ms ease-in-out 0s 1 normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+}
+.button {
+    transform: scale(1.0);
+    transform-origin: center;
+    transition: all 100ms ease-in-out;
+}
+.button:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    background-color: var(--back-default);
+    border-color: var(--border-default);
+}
+.button:not(:hover) {
+    transform: scale(1.0);
+    cursor: default;
+    background-color: var(--back-dark);
+    border-color: var(--back-default);
+}
+.button:active {
+    background-color: var(--border-default);
+    border-color: var(--border-default);
+}

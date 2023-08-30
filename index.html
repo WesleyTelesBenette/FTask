@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FTask</title>
+        <meta name="description" content="Aplicativo de Tarefas.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="sources/styles/index.css">
+    </head>
+    <body>
+        <header id="header">
+            <section id="header__links">
+                <nav id="links__nav">
+                    <a href="https://github.com/wesleytelesbenette">
+                        <img class="links__item" src="sources/images/GitHub.png"/>
+                    </a>
+                    <a href="https://br.linkedin.com/in/wesley-teles-benette-b540a8269">
+                        <img class="links__item" src="sources/images/LinkedIn.png"/>
+                    </a>
+                    <a href="#"><img class="links__item" src="sources/images/Instagram.png"/></a>
+                </nav>
+            </section>
+            <section id="header__presentation"> 
+                <h1 id="presentation__title__1">F</h1>
+                <div class="presentation__div">
+                    <h1 id="presentation__title__2">Task</h1>
+                    <p id="presentation__description">Não se preocupe...<br/>suas tasks não serão salvas :)</p>
+                </div>
+            </section>
+        </header>
+
+        <main id="main">
+            <h2 id="main__title">Tasks</h2>
+            <hr class="hr"/>
+            <section id="tasks">
+                <div id="0" class="task__item taskInit">
+                    <input class="item__check task__style button taskInit" type="checkbox"/>
+                    <div class="item__div taskInit"></div>
+                    <input class="item__input task__style taskInit" maxlength="70" type="text" placeholder="My task..."/>
+                    <div class="item__div taskInit"></div>
+                    <div class="item__add task__style button taskInit">+</div>
+                    <div class="item__div taskInit task__style__desatived"></div>
+                    <div class="item__delete task__style taskInit task__style__desatived">x</div>
+                </div>
+            </section>
+            <div id="main__add"  tabindex="0" class="task__style button">+</div>
+
+            <hr class="hr"/>
+        </main>
+
+        <footer id="footer">
+            <div id="footer__div">
+                <h2 id="footer__title">FTask</h2>
+                <p id="footer__rights">By. Wesley T. Benette. - <span class="scratched">Todos os</span> Sem direitos reservados.</p>
+            </div>
+        </footer>
+        <script src="sources/scripts/index.js" async defer></script>
+    </body>
+</html>
+

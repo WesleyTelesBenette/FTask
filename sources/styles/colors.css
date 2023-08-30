@@ -1,0 +1,14 @@
+
+:root {
+    /* Texto */
+    --text-default: #ffffff;
+    --text-shadow: #b4b4b4;
+    --text-dark: #252525;
+
+    /* Fundo e Contorno */
+    --back-default: #252525;
+    --back-dark: #0c0c0c;
+
+    /* Border Botão */
+    --border-default: #706d72;
+}
