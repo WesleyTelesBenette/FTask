@@ -71,7 +71,7 @@ function addTask(index) {
         divTasks.children[0].children[5].classList.remove('task__style__desatived');
     }
 
-    //Onde colocar?
+    //É para adicionar no final? (não tem index)
     if ((typeof(index) != 'number') || (dados.find(item => item === index.toString()) == undefined)) {
         //Index e Evento
         newTask.id = (dados.length).toString();
